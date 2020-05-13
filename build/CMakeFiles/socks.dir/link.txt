@@ -1,0 +1,1 @@
+/bin/g++     -std=c++0x -g    CMakeFiles/socks.dir/main/sylar_thread.cpp.o CMakeFiles/socks.dir/main/tset_main.cpp.o CMakeFiles/socks.dir/main/t_main.cpp.o  -o socks -rdynamic -lpthread 

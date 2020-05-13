@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/socks/socks_tt/test_1/build",
+  "command": "/bin/g++      -std=c++0x -g   -o CMakeFiles/socks.dir/main/sylar_thread.cpp.o -c /home/socks/socks_tt/test_1/main/sylar_thread.cpp",
+  "file": "/home/socks/socks_tt/test_1/main/sylar_thread.cpp"
+},
+{
+  "directory": "/home/socks/socks_tt/test_1/build",
+  "command": "/bin/g++      -std=c++0x -g   -o CMakeFiles/socks.dir/main/tset_main.cpp.o -c /home/socks/socks_tt/test_1/main/tset_main.cpp",
+  "file": "/home/socks/socks_tt/test_1/main/tset_main.cpp"
+},
+{
+  "directory": "/home/socks/socks_tt/test_1/build",
+  "command": "/bin/g++      -std=c++0x -g   -o CMakeFiles/socks.dir/main/t_main.cpp.o -c /home/socks/socks_tt/test_1/main/t_main.cpp",
+  "file": "/home/socks/socks_tt/test_1/main/t_main.cpp"
+}
+]

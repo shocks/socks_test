@@ -1,0 +1,57 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3145075538/fast"
+gmake[1]: Entering directory `/home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3145075538.dir/build.make CMakeFiles/cmTryCompileExec3145075538.dir/build
+gmake[2]: Entering directory `/home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3145075538.dir/CheckSymbolExists.c.o
+/bin/gcc    -o CMakeFiles/cmTryCompileExec3145075538.dir/CheckSymbolExists.c.o   -c /home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3145075538
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3145075538.dir/link.txt --verbose=1
+/bin/gcc       CMakeFiles/cmTryCompileExec3145075538.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3145075538 -rdynamic 
+CMakeFiles/cmTryCompileExec3145075538.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[2]: Leaving directory `/home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTryCompileExec3145075538] Error 1
+gmake[1]: Leaving directory `/home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec3145075538/fast] Error 2
+
+File /home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec527015311/fast"
+gmake[1]: Entering directory `/home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec527015311.dir/build.make CMakeFiles/cmTryCompileExec527015311.dir/build
+gmake[2]: Entering directory `/home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec527015311.dir/CheckFunctionExists.c.o
+/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec527015311.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec527015311
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec527015311.dir/link.txt --verbose=1
+/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec527015311.dir/CheckFunctionExists.c.o  -o cmTryCompileExec527015311 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTryCompileExec527015311] Error 1
+gmake[2]: Leaving directory `/home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec527015311/fast] Error 2
+gmake[1]: Leaving directory `/home/socks/socks_tt/test_1/build/CMakeFiles/CMakeTmp'
+
+

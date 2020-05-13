@@ -1,0 +1,36 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "debug-socks-cmake",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                // Ask msbuild to generate full paths for file names.
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "${workspaceFolder}"
+            ],
+            "options": {
+				"cwd": "${workspaceFolder}/z_run/debug"
+			}
+        },
+        {
+            "label": "debug-socks-make",
+            "type": "shell",
+            "command": "make",
+            "options": {
+				"cwd": "${workspaceFolder}/z_run/debug"
+			}
+        },
+        {
+            "label": "debug-socks-clear",
+            "type": "shell",
+            "command": "rm -rf ${workspaceFolder}/z_run/debug/*",
+         /*   "options": {
+				"cwd": "${workspaceFolder}/z_run/debug"
+			}*/
+        }
+    ]
+}

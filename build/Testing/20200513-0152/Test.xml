@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++"
+	BuildStamp="20200513-0152-Experimental"
+	Name="bogon"
+	Generator="ctest-2.8.12.2"
+	CompilerName="/bin/g++"
+	OSName="Linux"
+	Hostname="bogon"
+	OSRelease="3.10.0-957.el7.x86_64"
+	OSVersion="#1 SMP Thu Nov 8 23:39:32 UTC 2018"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="158"
+	ProcessorCacheSize="9216"
+	NumberOfLogicalCPU="6"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="20479"
+	TotalPhysicalMemory="15726"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="3799.93"
+>
+<Testing>
+	<StartDateTime>May 13 09:52 CST</StartDateTime>
+	<StartTestTime>1589334765</StartTestTime>
+	<TestList>
+	</TestList>
+	<EndDateTime>May 13 09:52 CST</EndDateTime>
+	<EndTestTime>1589334765</EndTestTime>
+<ElapsedMinutes>0</ElapsedMinutes></Testing>
+</Site>
